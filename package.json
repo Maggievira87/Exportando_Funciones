@@ -1,0 +1,21 @@
+{
+  "name": "exportando_funciones",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maggievira87/Exportando_Funciones.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maggievira87/Exportando_Funciones/issues"
+  },
+  "homepage": "https://github.com/Maggievira87/Exportando_Funciones#readme"
+}
