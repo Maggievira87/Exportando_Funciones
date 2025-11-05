@@ -31,3 +31,20 @@ export function aplicarDescuento(total) {
   return total * (1 - DESCUENTO);
 }
 console.log("Descuento aplicado a $100:", aplicarDescuento(100)); // debería mostrar 90
+
+//Ejericicio 5
+
+export function aplicarDescuentoPorRol(total, usuario) {
+  if(usuario.rol == "admin") {
+    //20% de descuento
+    return total * 0.80
+  }
+  else if(usuario.rol == "cliente") {
+    let descuentoTotal = total * DESCUENTO;
+    return total - descuentoTotal;
+  }
+  else {
+    console.log("Usuario:", usuario.nombre, "Sin rol");
+    return undefined
+  }
+}

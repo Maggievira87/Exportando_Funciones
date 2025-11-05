@@ -9,7 +9,8 @@ import {
     areaCirculo,
     calcularTotal,
     aplicarImpuestos,
-    aplicarDescuento
+    aplicarDescuento,
+    aplicarDescuentoPorRol
   }  from './operaciones-matematicas.js';
   
   
@@ -78,6 +79,7 @@ import {
   const adminConIVA = aplicarImpuestos(adminCompra);
   const adminFinal = aplicarDescuentoPorRol(adminConIVA, usuario1);
   console.log(`\n Admin (${usuario1.nombre}) compró 4 productos a $25`);
+  console.log(`\n Rol (${usuario1.rol})`);
   console.log(`Subtotal: $${adminCompra.toFixed(2)}`);
   console.log(`Con IVA: $${adminConIVA.toFixed(2)}`);
   console.log(`Con descuento por rol: $${adminFinal.toFixed(2)}`);
@@ -86,6 +88,7 @@ import {
   const clienteConIVA = aplicarImpuestos(clienteCompra);
   const clienteFinal = aplicarDescuentoPorRol(clienteConIVA, usuario2);
   console.log(`\n Cliente (${usuario2.nombre}) compró 3 productos a $50`);
+  console.log(`\n Rol (${usuario2.rol})`);
   console.log(`Subtotal: $${clienteCompra.toFixed(2)}`);
   console.log(`Con IVA: $${clienteConIVA.toFixed(2)}`);
   console.log(`Con descuento por rol: $${clienteFinal.toFixed(2)}`);

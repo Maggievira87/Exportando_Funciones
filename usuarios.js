@@ -11,7 +11,6 @@ function hoy () {
 
 export function crearUsuario(nombre, rol) {
     if(rol == "admin" || "cliente") {
-
         let usuario = {
             nombre: nombre,
             rol: rol,
