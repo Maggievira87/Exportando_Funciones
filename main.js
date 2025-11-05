@@ -1,7 +1,5 @@
-/*
 // Ejercicio 1: Importar constantes
 import { PI, IVA, DIAS_SEMANA, DESCUENTO } from './constantes.js';
-*/
 
 // Ejercicio 2 y 3: Importar funciones matemáticas
 import {

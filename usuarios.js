@@ -4,7 +4,7 @@ function hoy () {
     const mes = String(hoy.getMonth() + 1).padStart(2, '0'); // Los meses comienzan en 0
     const año = hoy.getFullYear();
     const fechaFormateada = `${dia}/${mes}/${año}`;
-    console.log(fechaFormateada);
+    return hoy;
     
 }
 
@@ -15,7 +15,8 @@ export function crearUsuario(nombre, rol) {
         let usuario = {
             nombre: nombre,
             rol: rol,
-            fechaRegistro:hoy()
+            fechaRegistro: new Date().toLocaleDateString()
         }
+        return usuario;
     } else console.log("Rol equivocado.");
 }
